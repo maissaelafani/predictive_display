@@ -1,0 +1,70 @@
+
+        PROGRAMME DE SAISIE INTUITIVE
+
++ La fonction principale de ce programme est de réaliser une saisie intuitive en proposant 
+des prédictions à l'utilisateur lorsque ce dernier écris un message.
+Ce programme a été réalisé par .... .... .
+
+
+        MISE EN PLACE ET INSTALLATION
+
++ Ce programme a été conçu et testé pour linux. Pour fonctionnner il faut s'assurer 
+d'avoir correctement installé les paquets suivants:
+    - gcc -> compilateur C
+    - make -> modularité du programme
+    - libncursesw5-dev -> librairie C pour éntrée utilisateur
+    - libncurses5-dev -> librairie C
+Executer dans le terminal "sudo apt install gcc make libncursesw5-dev libncurses5-dev"
++ Pour démarrer le programme il faut se mettre dans le dossier où se trouve le 
+fichier 'makefile'. Il suffira executer la commande "make main && ./main".
+
+
+        INTERFACE ET UTILISATION
+
++ Le programme possède une interface graphique dans le terminal.
+Pour naviguer entre les différentes fenêtres il faut entrer le chiffre correspondant as 
+sousmenu et appuyer sur entrée.
+*** BUG CONNU ***  - Entrer une lettre au lieu d'un chiffre provoquera un crash 
+
+
+            FONCTIONNALITÉS
+
++ 1. Clavier avec prédiction
+FONCTION
+Ici l'utilisateur peut saisir du texte et obtenir des predictions.
+MODE D'EMPLOI
+- Le processus se fait de manière automatique, pas besoin d'appuyer sur 'entrée' à chaque fois.
+- Le programme est capable de distinguer de nouveaux mots après avoir appuyé sur 'espace'.
+- Pour sélectionner une proposition il suffit d'appuyer sur 1,2 ou 3 qui correspondent 
+repsectivement à la 1ère,2éme et 3éme proposition à partir de la gauche. Le mot sera 
+automatiquement remplacé par la proposition choisie.
+- POur quitter la saisie intuitive il faut appuyer sur 'échap'.
+***BUG*** - Cette fonctionnalité est susceptibe à la casse avec des Majuscules et certains c
+            aractères speciaux
+
++ 2. Afficher dictionnaire
+FONCTION
+on affiche au choix le dictionnaire personnel ou français
+MODE D'EMPLOI
+il suffit de selectionner dans le menu la fonctionnalité souhaité et appuyer sur 'entrée'
+
++ 3. Ajouter un mot
+FONCTION
+permet d'ajouter un mot dans le dictionnaire personnel
+MODE D'EMPLOI
+il faut ecrire le mot à ajouter et confirmer en appuyant sur 'entrée'
+
++ 4. Supprimer un mot
+FONCTION
+permet de supprimr un mot dans le dictionnaire personnel
+MODE D'EMPLOI
+il faut ecrire le mot à suppriemer et confirmer en appuyant sur 'entrée'
+
++ 5. Paramètre de prédiction
+FONCTION
+permet de sélectionner le mode de prédiction :
+    -> mode frequence : tri des propositions selon leur fréquence d'utilisation
+    -> mode temporel : tri des proposition selon leur dernière utilisation
+MODE D'EMPLOI
+il suffit de selectionner l'option avec son nombre et appuyer sur 'entrée'
+
